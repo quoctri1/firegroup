@@ -20,5 +20,5 @@ We can using Github Action or Jenkins to create a pipeline include some steps be
 ### With CD
 We can use ArgoCD as tool for CD process, but need to prepare some stuff for that:
 - First, we need to create a repo to save our manifests (helm or kustomize) of kubernetes.
-- Second, with our simple api, we just need to create some simple resources like deployment, services, ingress.
+- Second, with our simple api, we just need to create some simple resources like deployment, services, ingress and secrets for AWS key.
 - Create Application resource for ArgoCD to update and deploy our manifests whenever we update config on manifests repo
