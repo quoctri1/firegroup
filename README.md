@@ -5,7 +5,7 @@ A simple API to update Launch Configuration in Auto Scaling Group with new AMI.
 We just need to build and run Dockerfile
 ```
 docker build -t <image_name>:<image_tag> .
-docker run -d -p 5000:5000 --name container_name -e ACCESS_KEY=<access_key> -e SECRET_KEY=<secret_key> -e REGION=<region>
+docker run -d -p 5000:5000 --name container_name -e ACCESS_KEY=<access_key> -e SECRET_KEY=<secret_key> -e REGION=<region> <image_name>:<image_tag>
 ```
 after that, to using it we can access:
 - http://localhost:5000 to show list of our asg.
